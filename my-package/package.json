@@ -1,0 +1,43 @@
+{
+  "name": "@my-company/my-package",
+  "version": "1.0.7",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "require": "./index.cjs"
+    }
+  },
+  "types": "index.d.ts",
+  "files": [
+    "."
+  ],
+  "publishConfig": {
+    "registry": "http://registry.local/some-path/"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tufjs/canonical-json": "^2.0.0",
+    "structured-headers": "^2.0.0",
+    "tweetnacl": "^1.0.3",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "express": "^5.1.0",
+    "madge": "^8.0.0",
+    "prettier": "3.5.3",
+    "raw-body": "^3.0.0",
+    "rimraf": "^5.0.0",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
