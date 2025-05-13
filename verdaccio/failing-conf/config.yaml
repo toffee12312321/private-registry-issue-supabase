@@ -3,7 +3,7 @@ auth:
   htpasswd:
     file: ./htpasswd
 
-path_prefix: /some-path/
+url_prefix: /some-path/
 
 uplinks:
   npmjs:
